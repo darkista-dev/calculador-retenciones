@@ -132,15 +132,5 @@ footer img {
 }
 
 @media (max-width: 640px) {
-<<<<<<< HEAD
     
-=======
-    .main-container{
-        justify-content: start;
-    }
-
-    .main-container h1 {
-        margin-top: 1rem;
-    }
->>>>>>> 1f2381b28fe9202fbe2ac059a2056d1334350a78
 }
