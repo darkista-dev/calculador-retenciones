@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/script.js"></script>
+    <title>Retenciones</title>
+</head>
+<body>
+    <div class="main-container">
+        <h1 class="title">Calculador de Retenciones</h1>
+        <div class="form-container">
+            <p>Base imponible</p>
+            <input type="text" id="base-field" placeholder="Monto...">
+
+            <p>Monto Exento</p>
+            <input type="text" id="excent-field" placeholder="Monto...">
+
+            <div class="percent-container">
+                <p>Porcentaje de Retencion</p>
+                <select name="%" id="rt-percent">
+                    <option value="0.25">75%</option>
+                    <option value="1">100%</option>
+                </select>
+            </div>
+
+            <div class="percent-container">
+                <p>IGTF</p>
+                <select name="%" id="igtf-percent">
+                    <option value="0.03">Si</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+
+            <button id="btn-calculate" onclick="calcularRetencion()">Calcular</button>
+
+            <div class="total-container">
+                <p>Total:</p>
+                <p id="total">0$</p>
+            </div>
+
+            <div class="total-container">
+                <p>Lo que debes pagar:</p>
+                <p id="payment">0$</p>
+            </div>
+        </div>
+
+        <footer>
+            <img src="logo.jpg" alt="">
+            <div>
+                <p>Developed by: Darkista Dev</p>
+                <p>Instagram: <a href="https://www.instagram.com/darkistadev/">@darkistadev</a></p>
+                <p>Email: darkistadev@gmail.com</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

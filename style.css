@@ -1,0 +1,138 @@
+:root {
+    --text: #ffffff;
+    --background: #000000;
+    --primary: #0cc328;
+    --secondary: #8A04A3;
+    --accent: #875bb3;
+}
+
+body {
+    margin: 0;
+    
+    width: 100%;
+    height: 100%;
+}
+
+.main-container {
+    font-family: 'Figtree', sans-serif;
+    font-size: 16pt;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+    background: linear-gradient(185deg, rgba(2,0,36,1) 48%, rgba(135,91,179,1) 100%);
+    color: white;
+    border: none;
+}
+
+.main-container h1 {
+    margin: 0 0 2rem 0;
+    padding: 0;
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container p {
+    margin: 0 0 0.5rem 0;
+}
+
+.form-container input {
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 32px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid var(--secondary);
+    border-radius: 8px;
+}
+
+.form-container input:focus {
+    outline: none;
+}
+
+.form-container button {
+    width: 100px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    place-self: center;
+    margin-bottom: 2rem;
+    color: var(--text);
+    background-color: var(--secondary);
+}
+
+.form-container button:hover {
+    background-color: var(--accent);
+}
+
+.percent-container {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.percent-container p {
+    margin: 0;
+}
+
+.percent-container select {
+    border-radius: 4px;
+    background-color: transparent;
+    color: var(--text);
+}
+
+.percent-container select:hover {
+    background-color: black;
+}
+
+.total-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.total-container p:nth-child(1) {
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    bottom: 0;
+    font-size: 8pt;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    margin: 0.5rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+footer a:hover {
+    color: var(--secondary);
+}
+
+footer img {
+    border-radius: 50%;
+    height: 80px;
+}
+
+@media (max-width: 640px) {
+    footer {
+        position: ;
+    }
+}
