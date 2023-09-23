@@ -132,5 +132,19 @@ footer img {
 }
 
 @media (max-width: 640px) {
-    
+    .main-container{
+        justify-content: start;
+    }
+
+    .main-container h1 {
+        margin-top: 1rem;
+    }
+
+    .form-container {
+        height: 100vh;
+    }
+
+    footer {
+        position: relative;
+    }
 }
